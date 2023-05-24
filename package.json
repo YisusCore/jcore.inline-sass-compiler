@@ -1,0 +1,39 @@
+{
+  "name": "jcore-inline-sass-compiler",
+  "displayName": "jcore-inline-sass-compiler",
+  "description": "JCore Inline Sass Compiler",
+  "version": "0.0.1",
+  "publisher": "JCore",
+  "engines": {
+    "vscode": "^1.22.0",
+    "node": "^16.17.0"
+  },
+  "categories": [
+    "Extension Packs",
+    "Debuggers",
+    "Formatters"
+  ],
+  "dependencies": {
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "@types/vscode": "^1.78.0",
+    "tslint": "^6.1.3",
+    "typescript": "^5.0.4"
+  },
+  "main": "./index.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jcore.compile-inline-sass",
+        "title": "Compilar Sass/Scss seleccionado",
+        "enablement": ""
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./"
+  }
+}
