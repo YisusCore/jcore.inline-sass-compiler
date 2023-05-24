@@ -22,13 +22,12 @@
     "tslint": "^6.1.3",
     "typescript": "^5.0.4"
   },
-  "main": "./index.js",
+  "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "jcore.compile-inline-sass",
-        "title": "Compilar Sass/Scss seleccionado",
-        "enablement": ""
+        "title": "Compilar Sass/Scss seleccionado"
       }
     ]
   },
